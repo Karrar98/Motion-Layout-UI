@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    app:layoutDescription="@xml/activity_main_scene">
+
+    <ImageView
+        android:id="@+id/image_Video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_video" />
+
+    <TextView
+        android:id="@+id/title_Video"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/image_Video"
+        android:background="#2d2f31"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/paddingNormal"
+        android:text="@string/my_video_title"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/image_Play_Video"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/image_Video"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/ic_play_video"
+        app:tint="@color/white" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
